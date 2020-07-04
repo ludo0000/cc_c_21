@@ -64,7 +64,7 @@ void game_loop(t_game * g)
   {
     printf (" Tu as gagné, t'es si fort.\n Tu as gagné %i coins", g->player->score );
   }
-  else
+  if (g->player->score >=0)
   {
     printf("Tu as perdu !");
   }
